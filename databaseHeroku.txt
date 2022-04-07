@@ -1,0 +1,6 @@
+mysql://b98a8f73352560:b7eeedb0@us-cdbr-east-05.cleardb.net/heroku_8704deb5ae7b506?reconnect=true
+
+
+
+heroku config:set DB_BD=heroku_8704deb5ae7b506
+heroku config:unset DB_BD
