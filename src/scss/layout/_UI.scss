@@ -10,7 +10,7 @@
 
     .imagen {
         height: 20rem;
-        background-image: url(../../../build/img/1.jpg); // ../img1/.jpg
+        background-image: url(../../build/img/1.jpg); // ../img1/.jpg
         background-size: cover;
         background-position: center center;
         @include m.tablet {
