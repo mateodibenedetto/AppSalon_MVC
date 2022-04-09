@@ -25,8 +25,8 @@ class Router
 
         // $auth = $_SESSION['login'] ?? null;
 
-        $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
-        // $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
+        $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI']; // Para deplyment en heroku
+        // $currentUrl = $_SERVER['PATH_INFO'] ?? '/'; // para local
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ($method === 'GET') {
