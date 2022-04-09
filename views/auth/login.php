@@ -33,5 +33,5 @@
 
 <div class="acciones">
     <a href="/public/crear-cuenta">¿Aún no tienes una cuenta? Crear una</a>
-    <a href="/public/olvide">¿Olvidaste tu contraseña?</a>
+    <a href="/olvide">¿Olvidaste tu contraseña?</a>
 </div>
