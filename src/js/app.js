@@ -132,6 +132,7 @@ async function consultarAPI() {
 
     try {
         const url = 'https://enigmatic-beach-38995.herokuapp.com/api/servicios';
+        // const url = 'http://localhost:3000/public/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
