@@ -39,7 +39,7 @@ class ServicioController {
 
             if(empty($alertas)) {
                 $servicio->guardar();
-                header('Location: /public/servicios');
+                header('Location: /servicios');
             }
         }    
 
@@ -67,7 +67,7 @@ class ServicioController {
 
             if(empty($alertas)) {
                 $servicio->guardar();
-                header('Location: /public/servicios');
+                header('Location: /servicios');
             }
         }  
         
@@ -88,7 +88,7 @@ class ServicioController {
             $id = $_POST['id'];
             $servicio = Servicio::find($id);
             $servicio->eliminar();
-            header('Location: /public/servicios');
+            header('Location: /servicios');
         }  
     }
 }

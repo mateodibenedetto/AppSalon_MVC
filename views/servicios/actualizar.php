@@ -11,7 +11,7 @@
     <?php include_once __DIR__ . '/formulario.php'; ?>
 
     <div class="btns">
-        <a href="/public/servicios" class="boton"> < Volver</a>
+        <a href="/servicios" class="boton"> < Volver</a>
         <input type="submit" class="boton" value="Actualizar">
     </div>
 </form>

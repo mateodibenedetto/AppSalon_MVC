@@ -36,9 +36,9 @@ class LoginController {
                         // Redireccionamiento
                         if($usuario->admin === "1") {
                             $_SESSION['admin'] = $usuario->admin ?? null;
-                            header('Location: /public/admin');
+                            header('Location: /admin');
                         } else {
-                            header('Location: /public/cita');
+                            header('Location: /cita');
                         }
                     }
                 } else {
@@ -63,7 +63,7 @@ class LoginController {
         
         $_SESSION = [];
 
-        header('Location: /public/');
+        header('Location: /');
     }
 
     //** OLVIDE **//
@@ -135,7 +135,7 @@ class LoginController {
 
                 $resultado = $usuario->guardar();
                 if($resultado) {
-                    header('Location: /public/');
+                    header('Location: /');
                 }
             }
         }
@@ -183,7 +183,7 @@ class LoginController {
                     $resultado = $usuario->guardar();
 
                     if($resultado) {
-                        header('Location: /public/mensaje');
+                        header('Location: /mensaje');
                     }
                 }
             }

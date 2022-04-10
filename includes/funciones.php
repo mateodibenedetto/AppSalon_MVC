@@ -23,13 +23,13 @@ function esUltimo(string $actual, string $proximo) : bool {
 // Función que revisa que el usuario esté autenticado
 function isAuth() : void {
     if(!isset($_SESSION['login'])) {
-        header('Location: /public/');
+        header('Location: /');
     }
 }
 
 // Función que revisa si es Admin o no
 function isAdmin() : void {
     if(!isset($_SESSION['admin'])) {
-        header('Location: /public/');
+        header('Location: /');
     }
 }
