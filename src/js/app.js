@@ -131,8 +131,8 @@ function paginaSiguiente() {
 async function consultarAPI() {
 
     try {
-        const url = 'https://enigmatic-beach-38995.herokuapp.com/api/servicios';
         // const url = 'http://localhost:3000/public/api/servicios';
+        const url = 'us-cdbr-east-05.cleardb.net';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
@@ -357,7 +357,7 @@ async function reservarCita() {
 
     try {
         // Petición hacia la API
-        const url = 'https://enigmatic-beach-38995.herokuapp.com/api/citas';
+        const url = 'us-cdbr-east-05.cleardb.net';
         const respuesta = await fetch(url, {
         method: 'POST',
         body: datos 
